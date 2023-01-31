@@ -1,0 +1,63 @@
+.Quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: calc(100vw - 70px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  .Quote__container {
+    border: 1px solid whitesmoke;
+    border-radius: 6px;
+    box-shadow: 1px 1px 20px black;
+    padding: 8px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .PrevNext {
+    display: flex;
+    gap: 20px;
+    button {
+      padding: 5px 10px;
+      border-radius: 6px;
+
+      border: 1px solid #61dafb;
+      color: #61dafb;
+      background-color: rgba(245, 245, 245, 0);
+      cursor: pointer;
+      &:hover {
+        border: 1px solid whitesmoke;
+        color: whitesmoke;
+      }
+    }
+  }
+  .toHome {
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 20px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    button {
+      margin-top: 5px;
+      padding: 5px 10px;
+      border-radius: 6px;
+      border: 1px solid black;
+      color: black;
+      background-color: rgba(245, 245, 245, 0);
+      cursor: pointer;
+      &:hover {
+        border: 2px solid black;
+        color: black;
+        font-weight: bold;
+      }
+    }
+  }
+}
