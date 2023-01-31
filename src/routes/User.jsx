@@ -1,5 +1,5 @@
 import style from "./styles/styleUser.module.scss";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, Outlet } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { GrHomeRounded } from "react-icons/gr";
 

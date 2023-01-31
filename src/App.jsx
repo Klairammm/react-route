@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import style from "./styleApp.module.scss";
-import { Link } from "react-router-dom"; //metodo che si trasforma in un componente
+import { Link, Outlet } from "react-router-dom"; //metodo che si trasforma in un componente
 
 function App() {
   return (
