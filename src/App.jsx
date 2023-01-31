@@ -12,6 +12,7 @@ function App() {
       <div className={style.explore}>
         <Link to="/messages">Messages</Link>
         <Link to="/users">Meet our Users!</Link>
+        <Link to="/posts">Explore our Posts!</Link>
         <Link to="/contacts">Contacts</Link>
         <Link to="/error">Ooops..?!</Link>
       </div>
