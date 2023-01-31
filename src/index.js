@@ -6,7 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import Root from "./routes/root";
 import Quote from "./routes/Quote";
 import ErrorPage from "./error-page";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
 import User from "./routes/User";
 
 //creazione router
@@ -19,7 +19,12 @@ const router = createBrowserRouter([
   },
   {
     path: "/messages",
-    element: <h1>Messages</h1>,
+    element: (
+      <div className="Message">
+        <h1>Messages</h1>
+        <Link to="/messages/1">Show Me</Link>
+      </div>
+    ),
   },
   {
     path: "/messages/:quote",
@@ -27,7 +32,12 @@ const router = createBrowserRouter([
   },
   {
     path: "/users",
-    element: <h1>Users</h1>,
+    element: (
+      <div className="Users">
+        <h1>Users</h1>
+        <Link to="/users/1">Show Me</Link>
+      </div>
+    ),
   },
   {
     path: "/users/:user",
