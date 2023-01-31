@@ -4,6 +4,8 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Root from "./routes/root";
+import Post from "./routes/Post";
+import Posts from "./routes/Posts";
 import Quote from "./routes/Quote";
 import ErrorPage from "./error-page";
 import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
@@ -44,7 +46,15 @@ const router = createBrowserRouter([
     element: <User />,
   },
   {
-    path: "/Contacts",
+    path: "/posts",
+    element: <Posts />,
+  },
+  {
+    path: "/posts/:postID",
+    element: <Post />,
+  },
+  {
+    path: "/contacts",
     element: <h1>Contacts</h1>,
   },
   {
