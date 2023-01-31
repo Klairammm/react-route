@@ -1,4 +1,4 @@
-import { useParams, useNavigate, Link } from "react-router-dom";
+import { useParams, useNavigate, Link, Outlet } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { GrHomeRounded } from "react-icons/gr";
 import style from "./styles/styleQuote.module.scss";

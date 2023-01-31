@@ -8,10 +8,51 @@ import Post from "./routes/Post";
 import Posts from "./routes/Posts";
 import Quote from "./routes/Quote";
 import ErrorPage from "./error-page";
-import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Link,
+  createRoutesFromElements,
+  Route,
+} from "react-router-dom";
 import User from "./routes/User";
 
-//creazione router
+// creazione router con strutturazione delle routes basata su JSX
+// const router = createBrowserRouter(
+//   createRoutesFromElements(
+//     <Route>
+//       <Route path="/" element={<App />} errorElement={<ErrorPage />}>
+//         <Route
+//           path="messages"
+//           element={
+//             <div className="Message">
+//               <h1>Messages</h1>
+//               <Link to="/messages/1">Show Me</Link>
+//             </div>
+//           }
+//         />
+//         <Route path="messages/:quote" element={<Quote />} />
+//         <Route
+//           path="users"
+//           element={
+//             <div className="Users">
+//               <h1>Users</h1>
+//               <Link to="/users/1">Show Me</Link>
+//             </div>
+//           }
+//         />
+//         <Route path="users:user" element={<User />} />
+//         <Route path="posts" element={<Posts />} />
+//         <Route path="posts:postID" element={<Post />} />
+//         <Route path="contacts" element={<h1>Contacts</h1>} />
+//       </Route>
+//     </Route>
+//   )
+// );
+
+//-------------------------------------------
+
+//creazione router su oggetti
 
 const router = createBrowserRouter([
   {
